@@ -47,7 +47,7 @@
         "laravel": {
             "providers": [
                 "Konnec\\Debugging\\Providers\\ServiceProvider",
-                "Konnec\\Debuggin\\Providers\\RouteServiceProvider"
+                "Konnec\\Debugging\\Providers\\RouteServiceProvider"
             ]
         }
     },

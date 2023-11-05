@@ -1,10 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Konnec\Debugging\Controllers\ViewController;
-use Konnec\VueEloquentApi\Controllers\StoreController;
+use Konnec\Debugging\Controllers\StreamController;
+use Konnec\Debugging\Controllers\DashboardController;
 
-Route::prefix(config('eloquent-api.api_prefix') . '/debugging')->group(function () {
-    Route::apiResource('messages', StoreController::class);
-    Route::get('view', [ViewController::class, 'index']);
+Route::prefix(config('konnec-debugging.routes_prefix') . '/')->group(function () {
+    Route::apiResource('messages', StreamController::class);
+    Route::get('dashboard', [DashboardController::class, 'index']);
 });

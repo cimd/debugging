@@ -4,10 +4,10 @@ namespace Konnec\Debugging\Controllers;
 
 use Illuminate\View\View;
 
-class ViewController extends Controller
+class DashboardController extends Controller
 {
     public function index(): View
     {
-        return view('index');
+        return view('debugging::index');
     }
 }

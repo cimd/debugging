@@ -1,0 +1,14 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "vite --open",
+        "build": "vite build"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-vue": "^4.4.0",
+        "axios": "^1.6",
+        "laravel-vite-plugin": "^0.8.1",
+        "vite": "^4.5",
+        "vue": "^3.3.7"
+    }
+}
